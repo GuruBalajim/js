@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="./stylesheet.css">
+</head>
+<body>
+    <div class="content">
+    <div class="calculator">
+        <input   id="display" readonly>
+           
+        <div class="keys">
+            <button class="operation" onclick="del1()">Ac</button>
+            <button class="operation" onclick="del()">DEL</button>
+            <button class="operation" onclick="display1('%')">%</button>
+            <button class="operation1" onclick="display1('/')">/</button>
+
+            <button class="operation2" onclick="display1('7')">7</button>
+            <button class="operation2" onclick="display1('8')">8</button>
+            <button class="operation2" onclick="display1('9')">9</button>
+            <button class="operation1" onclick="display1('*')">*</button>
+            <button class="operation2" onclick="display1('4')">4</button> 
+            <button class="operation2" onclick="display1('5')">5</button>
+            <button class="operation2" onclick="display1('6')">6</button>
+            <button class="operation1" onclick="display1('-')">-</button>
+            <button class="operation2" onclick="display1('1')">1</button>
+            <button class="operation2" onclick="display1('2')">2</button>
+            <button class="operation2" onclick="display1('3')">3</button>
+            <button class="operation1" onclick="display1('+')">+</button>
+            <button id ="zero"  onclick="display1('0')">0</button>
+            <button class="operation2" onclick="display1('.')">.</button>
+            <button class="operation1" onclick="calculate('=')">=</button>
+            </div>
+        </div>
+    </div>
+<script>
+    const display=document.getElementById("display")
+    function display1(input){
+   display.value +=input;
+    }
+    function del1(){
+     display.value = "";
+    }
+    function del(){
+      display.value= display.value.toString().slice(0,-1);
+    }
+    function calculate(){
+        try
+    {
+        display.value= eval(display.value)
+    }
+    catch(error){
+        display.value="error"
+    }
+
+    }
+</script>
+</body>
+</html>
