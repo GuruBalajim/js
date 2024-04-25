@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validation</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="main">
+            <h2>Login To Code Maker</h2>
+    <div class="main1">
+        <div class="user">
+           <label for="email">user name or email</label>
+           <input id="use" type="text" >
+        </div>
+        <div class="pass">
+         <label for="password">password</label>
+         <input id="pass1" type="password">
+        </div>
+        <div class="result">
+            <div id="res"></div>
+        
+         <button onclick="checking()" > LOGIN</button>
+        </div>
+     </div>
+</div>
+<script>
+function checking(){
+        
+        var userbox = document.getElementById("use");
+        var passbox = document.getElementById("pass1");
+        var username = document.getElementById("use").value;
+        var password = document.getElementById("pass1").value;
+        var result = document.getElementById("res");
+
+        if (username == '' || password == '') {
+            result.innerHTML = "Username or password cannot be empty"
+            result.className = "red";
+            userbox.className = "border";
+            passbox.className = "border";
+        }
+        else if (username.length < 4) {
+            result.innerHTML = "Username must contain minimum 4 characters"
+            result.className = "red";
+            userbox.className = "border";
+        }
+        else if (password.length < 6 || password.length > 12) {
+            result.innerHTML = "Password must contain 6 to 12 characters"
+            result.className = "red";
+            passbox.className = "border";
+        }
+        else {
+            result.innerHTML = "Successful"
+            result.className = "green";
+             }}
+</script>
+</body>
+</html>
