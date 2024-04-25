@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Lexend:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    height: 300px;
+    width: 600px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    margin-left: 500px;
+    margin-top: 250px;
+    border: 2px solid black;
+    h2{
+        font-size: 25px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        padding-left: 200px;
+    }
+   .main1{
+        display: flex;
+        flex-direction: column;
+    
+      .user{
+        display: flex;
+        flex-direction: column;
+      }
+      .pass{
+        display: flex;
+         flex-direction: column;
+          }
+      .result{
+        display: flex;
+        flex-direction: column;
+        }
+     .user,
+        .pass{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+
+          label{
+            padding-left: 25px;
+          }
+        }
+
+        input {
+            height: 30px;
+            padding: 5px;
+            font-size: 15px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .border {
+            border: 2px solid red;
+        }
+
+        .red {
+            color: red;
+        }
+
+        .green {
+            color: green;
+        }
+
+      .result {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            button {
+                padding: 15px;
+                width: 100%;
+                background-color: green;
+                color: white;
+                border: none;
+                cursor: pointer;
+                margin-left: 25px;
+                margin-right: 25px; 
+                height: 50px;
+                width: 350px;
+          }
+          button:hover{
+            scale: 1.1;
+          }
+       }
+    }
+}
