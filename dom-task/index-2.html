@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dynamic Element Creation</title>
+</head>
+<body>
+
+<div id="container"></div>
+<button id="helloButton">Hello</button>
+
+<script>
+document.getElementById("helloButton").addEventListener("click", function() {
+  var newHeading = document.createElement("h1");
+  newHeading.textContent = "Hello";
+  var container = document.getElementById("container");
+  container.appendChild(newHeading);
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Change Button Color</title>
+<link rel="stylesheet" href="style-3.css">
+</head>
+<body>
+<button onclick="changeColor()">Click me</button>
+
+<script>
+function changeColor() {
+
+  var button = document.querySelector("button");
+  var currentColor = button.style.backgroundColor;
+  if (currentColor === "blue") {
+    button.style.backgroundColor = "red";
+  } else {
+    button.style.backgroundColor = "blue";
+  }
+}
+</script>
+
+</body>
+</html>
