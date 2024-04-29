@@ -1,0 +1,146 @@
+.main{
+    background-color: rgb(248, 62, 99);
+    height: 100vh;
+    background-image: url(./images/bg-intro-desktop.png);
+    
+
+   .main-continer{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 150px; 
+  
+   
+    }
+   .box-left{
+    margin-top: 75px;
+    color: white;
+    p{
+        font-size: 15px;
+    }
+    h1{
+        font-size: 45px;
+    }
+    }
+   .box-rigth{
+      margin-top: 150px;
+   }
+   .btn1{
+    padding: 15px 100px 15px 100px ;
+    border-radius: 5px;
+    border: none;
+    background-color:hsl(248, 32%, 49%);
+    box-shadow:transparent;
+    color: white;
+    cursor: pointer;
+   }
+   .id {
+    color: white;
+    font-weight: bold;
+   }
+
+   .box-rigth-bottom{
+    height: 480px;
+    width: 450px;
+    background-color: white;
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+   }
+   input{
+    width: 390px;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+
+   }
+   .btn2{
+    width: 420px;
+    padding: 15px 85px 15px 85px;
+    border-radius: 5px;
+    border: none;
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+}
+
+   span{
+    color: red;
+   }
+   #para{
+    font-size: 12px;
+   }
+   
+   .border {
+    border: 2px solid red;
+        }
+
+        .red {
+            color: red;
+        }
+
+        .green {
+            color: green;
+        }
+    #result-1{
+        width: 450px;
+        padding-right: 20px;
+        text-align: right;
+        font-size: 12px;
+        font-style: italic;
+    }
+    #result-2{
+        width: 450px;
+        padding-right: 20px;
+        text-align: right;
+        font-size: 12px;
+        font-style: italic;
+    }
+    #result-3{
+        width: 450px;
+        padding-right: 20px;
+        text-align: right;
+        font-size: 12px;
+        font-style: italic;
+    }
+    #result-4{
+        width: 450px;
+        text-align: right;
+        padding-right: 20px;
+        font-size: 12px;
+        font-style: italic;
+    }
+   } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
