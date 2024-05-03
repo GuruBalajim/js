@@ -1,0 +1,87 @@
+body{
+    background-color:hsl(216, 12%, 8%);
+
+}
+.box{
+    height: 350px;
+    width: 400px;
+    background-color: hsl(213, 19%, 18%);
+    margin-top: 200px;
+    margin-left: 550px;
+    border-radius: 15px;
+}
+#bnt1{
+ border-radius: 60px;
+ border: none;
+ margin-left: 20px;
+ background-color: hsl(216, 12%, 54%);
+margin-top: 20px; 
+padding: 10px;
+}
+.head{
+    padding-left:20px ;
+    padding-top: 10px;
+    margin: 0px;
+    color: white;
+}
+.pa{
+    padding-left: 20px;
+    color: white;
+}
+#rate{
+    padding: 15px;
+    border-radius :50px;
+    margin-left: 10px;
+    background-color: hsl(216, 12%, 54%);
+    color: white;
+    border: none;
+}
+#rate:hover{
+    background-color: hsl(25, 97%, 53%);
+}
+#Submit{
+  background-color: hsl(25, 97%, 53%);
+  padding: 10px 95px 10px 95px;
+  margin-left: 70px;
+  margin-top: 25px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+
+}
+#Submit:hover{
+    background-color: white;
+    color: #000;
+}
+.th{
+    margin-top: 55px ;
+    margin-left: 95px;
+}
+#fram{
+    height: 25px;
+    width: 250px;
+    background-color: hsl(216, 12%, 54%);
+    margin-left: 55px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 15px;
+    padding-left: 5px;
+}
+#ra{
+    height: 23px;
+    width: 5px;
+   border: none;
+   background-color: hsl(216, 12%, 54%);
+}
+#head2{
+    margin-left:135px;
+    color: white;
+
+}
+#pa3{
+    color: white;
+    text-align: center;
+}
+a{
+    list-style: none;
+}
