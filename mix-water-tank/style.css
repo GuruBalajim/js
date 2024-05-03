@@ -1,0 +1,131 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.tankContainer1{
+    width: 250px;
+    height: 250px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 50px;
+}
+
+.tankContainer2{
+    width: 250px;
+    height: 250px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 50px;
+}
+
+.tankContainer3{
+    width: 250px;
+    height: 250px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 50px;
+}
+.water1{
+    background-color: aqua;
+    width: 100%;
+    height: 250px;
+    margin-top:0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.water2{
+   
+    background-color: aqua;
+    width: 100%;
+    height: 250px;
+    margin-top:0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.water3{
+   
+    background-color: aqua;
+    width: 100%;
+    height: 250px;
+    margin-top:0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.maincontainer{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    margin-left: 500px;
+}
+.PipeStraightcontainer{
+    width: 200px;
+    height: 23px;
+    background-color: brown;
+}
+.PipeVerticalcontainer{
+    width: 23px;
+    height: 90px;
+    margin-top: -10px;
+    background-color: brown;
+}
+.verticalTapContainer{
+    margin-top: -35px;
+}
+.tapbuttoon{
+    width: 40px;
+    height: 10px;
+    margin-left: -10px;
+    background-color: red;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+.waterflowcontainer1{
+    width: 13px;
+    height: 900px;
+    margin-left: 5px;
+    background-color: aqua;
+}
+.waterflowcontainer2{
+    width: 13px;
+    height: 900px;
+    margin-left: 5px;
+    background-color: aqua;
+
+}
+.waterflowcontainer3{
+    width: 13px;
+    height: 900px;
+    margin-left: 5px;
+    background-color: aqua;
+}
+.fullpipeContainer{
+
+    margin-left: -50px;
+    margin-top:270px; 
+}
+.beaker{
+    height: 450px;
+    width: 1500px;
+    margin-top: 800px;
+    margin-left: 650px;
+    position: absolute;
+    border: 2px solid black;
+    border-top: none;
+    display: flex;align-items: flex-end;
+}
+#bTank{
+    width: 100%;
+    height: 0px;
+}
