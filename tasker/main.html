@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasker Main</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ddebfb36e8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="main1">
+        <div class="nav1">
+            <img class="img5" src="./image/online-removebg-preview.png" alt="Tasker Logo">
+            <div class="task">
+                <i class="fa-solid fa-list-check"></i>
+                <button class="btn1-main">Tasks</button>
+            </div>
+            <div class="task1">
+                <i class="fa-solid fa-folder-closed"></i>
+                <div class="drop">
+                    <a href="#"> <b>Categories</b> ﹀ </a>
+                    <div class="option">
+                        <div class="colu"> <a href="#"> <div class="grey"></div> None</a> </div>
+                        <div class="colu1"> <a href="#"> <div class="pink"></div> Home </a> </div>
+                        <div class="colu2"> <a href="#"> <div class="yellow"></div> School </a> </div>
+                        <div class="colu3"> <a href="#"> <div class="blue"></div> Shopping List </a> </div>
+                        <div class="colu4"> <a href="#"> + Add More </a> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tasker_main">
+            <h1 id="pa">All Your Tasks</h1>
+            <form action="">
+                <div id="popup" class="popup">
+                    <div class="popup-content">
+                        <h4>Insert Name</h4>
+                        <input type="text" placeholder="Task Name" class="todo-input">
+                        <div class="drop3" onclick="toggleCategoryOptions()">Select Category</div>
+                        <select id="categoryOptions" class="optionss">
+                            <option value="None">None</option>
+                            <option value="Home">Home</option>
+                            <option value="School">School</option>
+                            <option value="Shopping">Shopping</option>
+                        </select>
+                        <div class="buttons">
+                            <button onclick="addTask(event)" class="todo-button"><i class="fas fa-plus-circle fa-lg"></i>Add</button>
+                            <button onclick="hidePopup()" id="btn2">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div id="edit-popup" class="popup">
+                <div class="popup-content">
+                    <h4>Edit Task</h4>
+                    <input type="text" placeholder="Task Name" class="edit-input">
+                    <div class="drop3" onclick="toggleCategoryOptions()">Select Category</div>
+                    <select id="edit-categoryOptions" class="optionss">
+                        <option value="None">None</option>
+                        <option value="Home">Home</option>
+                        <option value="School">School</option>
+                        <option value="Shopping">Shopping</option>
+                    </select>
+                    <div class="buttons">
+                        <button onclick="saveEdit()" class="save-button"><i class="fas fa-save fa-lg"></i>Save</button>
+                        <button onclick="hideEditPopup()" id="btn2">Cancel</button>
+                    </div>
+                </div>
+            </div>
+            <div class="select">
+                <button class="add" id="addmoretask" onclick="showPopup()"> + Add More </button>
+                <select name="todos" class="filter-todo">
+                    <option value="all">All</option>
+                    <option value="completed">Completed</option>
+                    <option value="incomplete">Incomplete</option>
+                </select>
+            </div>
+            <div class="todo-container">
+                <ul class="todo-list"></ul>
+            </div>
+        </div>
+        
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
+
